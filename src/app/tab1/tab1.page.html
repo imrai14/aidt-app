@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Camera
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <img src="/assets/shapes.svg" alt="" />
+    <ion-card-header>
+      <ion-card-subtitle>Get Started</ion-card-subtitle>
+      <ion-card-title>Please click to open camera</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p><img [src]="currentImage" *ngIf="currentImage"></p>
+
+      <ion-button color="primary" (click)="takePicture()">Take Picture</ion-button>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>
